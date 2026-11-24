@@ -1,0 +1,168 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background: #FFF5F7;
+    color: #4A4145;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #C76D8A;
+    color: #FFF9FA;
+    text-align: center;
+    padding: 40px 20px 45px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 4px rgba(120, 50, 70, 0.25);
+}
+
+header p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+/* Navigasi */
+nav {
+    background: #A94F70;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 16px 10px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #FFE4EC;
+    text-decoration: underline;
+}
+
+/* Konten utama */
+main {
+    max-width: 980px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+section {
+    background: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(170, 90, 115, 0.12);
+    padding: 25px;
+    margin-bottom: 22px;
+    border: 1px solid #F5DCE3;
+}
+
+section h2 {
+    color: #B45878;
+    font-size: 22px;
+    margin-bottom: 14px;
+}
+
+section p {
+    margin-bottom: 18px;
+}
+
+/* Tombol */
+.tombol {
+    display: inline-block;
+    background: #C76D8A;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.tombol:hover {
+    background: #A94F70;
+    transform: translateY(-2px);
+}
+
+/* Galeri */
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.galeri figure {
+    background: #FFF9FA;
+    border: 1px solid #F2D6DF;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.galeri figure:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(170, 90, 115, 0.15);
+}
+
+.galeri img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.galeri figcaption {
+    padding: 14px 12px;
+    font-weight: 600;
+    color: #B45878;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #8F405F;
+    color: #FFF;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Tampilan HP */
+@media (max-width: 700px) {
+    .galeri {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        gap: 18px;
+    }
+}
+```
